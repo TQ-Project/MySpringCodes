@@ -1,0 +1,13 @@
+package com.example.demo;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Technologies {
+
+	
+	
+	public void tech() {
+		System.out.println("Hello I am in Tech Method");
+	}
+}

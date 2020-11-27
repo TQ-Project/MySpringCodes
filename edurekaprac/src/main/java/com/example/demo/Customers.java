@@ -1,0 +1,45 @@
+package com.example.demo;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Customers {
+
+	private int id;
+	private String name;
+	private String address;
+    @Autowired
+	private Technologies techno;
+	public Technologies getTechno() {
+		return techno;
+	}
+	public void setTechno(Technologies techno) {
+		this.techno = techno;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	
+
+	public void show() {
+		System.out.println( "I am in Show Method");
+		techno.tech();
+	}
+	
+}
